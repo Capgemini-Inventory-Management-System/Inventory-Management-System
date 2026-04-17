@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "RCW5Xm37BfM=",
   "success": true,
   "projectFilePath": "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
@@ -46,11 +45,15 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.23\\microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.23\\microsoft.netcore.app.host.win-x64.8.0.23.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "Z5gFINjSIwM=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Divyansh Rai\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
-  "expectedPackageFiles": [],
->>>>>>> origin/team-a
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
