@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="INVENTORY-MANAGEMENT-SYSTEM/INVENTORY-MANAGEMENT-SYSTEM.csproj" />
+  <Project Path="InventoryManagement.API/InventoryManagement.API.csproj" Id="67d707cd-f699-4cda-a504-39dfe13785c8" />
 </Solution>
