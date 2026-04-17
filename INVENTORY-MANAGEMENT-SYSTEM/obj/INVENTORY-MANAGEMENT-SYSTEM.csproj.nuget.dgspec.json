@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
+    "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
   },
   "projects": {
-    "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {
+    "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+        "projectUniqueName": "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
         "projectName": "INVENTORY-MANAGEMENT-SYSTEM",
-        "projectPath": "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\visha\\.nuget\\packages\\",
-        "outputPath": "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\",
+        "projectPath": "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "E:\\C# Projects\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\visha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,6 +49,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.24, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,6 +68,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
