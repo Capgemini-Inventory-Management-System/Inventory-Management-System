@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
+    "C:\\Users\\Divyansh Rai\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
   },
   "projects": {
-    "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {
+    "C:\\Users\\Divyansh Rai\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+        "projectUniqueName": "C:\\Users\\Divyansh Rai\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
         "projectName": "INVENTORY-MANAGEMENT-SYSTEM",
-        "projectPath": "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\visha\\.nuget\\packages\\",
-        "outputPath": "D:\\Jatin_Singal\\CAPGEMINI-IMS\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\",
+        "projectPath": "C:\\Users\\Divyansh Rai\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+        "packagesPath": "C:\\Users\\Divyansh Rai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Divyansh Rai\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\visha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Divyansh Rai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
