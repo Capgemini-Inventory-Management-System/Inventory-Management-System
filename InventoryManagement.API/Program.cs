@@ -3,6 +3,9 @@ using InventoryManagement.API.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
+using InventoryManagement.API.Services;
+using InventoryManagement.API.Services.Interfaces;
+
 namespace InventoryManagement.API
 {
     public class Program
@@ -29,6 +32,10 @@ namespace InventoryManagement.API
 
 
             builder.Services.AddControllers();
+
+            // ---------- Team B Services/ feature/akshit ----------
+            builder.Services.AddScoped<IProductService, ProductService>();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
