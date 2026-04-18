@@ -1,8 +1,11 @@
-﻿namespace InventoryManagement.API.Services
+﻿using InventoryManagement.API.Models;
+
+namespace InventoryManagement.API.Services
 {
     public interface IAuthService
     {
-        string Register(User user);
-        string Login(LoginModel model);
+        Task<string> Register(LoginModel model);
+        Task<string> Login(LoginModel model);
+       
     }
 }

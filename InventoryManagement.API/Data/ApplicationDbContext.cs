@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace InventoryManagement.API.Data
 
@@ -14,11 +15,13 @@ namespace InventoryManagement.API.Data
         }
 
         // ── DbSets ──────────────────────────────────────────────────────────────
+        public DbSet<User> Users { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
