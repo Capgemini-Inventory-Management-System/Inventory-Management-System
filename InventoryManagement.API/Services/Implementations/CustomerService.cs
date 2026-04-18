@@ -1,6 +1,8 @@
-﻿using InventaryManagement.Models;
-using InventaryManagement.Models.DTOs;
+﻿using InventoryManagement.API.Data;
+using InventoryManagement.API.Models.Entities;
+using InventoryManagement.API.Models.DTOs;
 using InventoryManagement.API.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.API.Services.Implementations
 {
@@ -28,7 +30,7 @@ namespace InventoryManagement.API.Services.Implementations
             return customers;
         }
 
-        public async Task<CustomerDto?> GetCustomerByIdAsync(string id)
+        public async Task<CustomerDto?> GetCustomerByIdAsync(int id)
         {
             var customer = await _context.Customers.FindAsync(id);
             if (customer == null) return null;
@@ -63,7 +65,7 @@ namespace InventoryManagement.API.Services.Implementations
             };
         }
 
-        public async Task<CustomerDto?> UpdateCustomerAsync(string id, UpdateCustomer updateDto)
+        public async Task<CustomerDto?> UpdateCustomerAsync(int id, UpdateCustomer updateDto)
         {
             var customer = await _context.Customers.FindAsync(id);
             if (customer == null) return null;
@@ -83,7 +85,7 @@ namespace InventoryManagement.API.Services.Implementations
             };
         }
 
-        public async Task<bool> DeleteCustomerAsync(string id)
+        public async Task<bool> DeleteCustomerAsync(int id)
         {
             var customer = await _context.Customers
                 .Include(c => c.Orders)   // check if customer has placed orders

@@ -1,16 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace InventaryManagement.Models.DTOs
+namespace InventoryManagement.API.Models.DTOs
 {
     public class UpdateCustomer
     {
-        [Required, MaxLength(100)]
+        [Required, MaxLength(150)]
         public string CustomerName { get; set; } = string.Empty;
 
-        [Required, MaxLength(15), RegularExpression(@"^\d{10}$", ErrorMessage = "Mobile number must be 10 digits")]
+        [Required, Phone, MaxLength(20)]
         public string MobileNumber { get; set; } = string.Empty;
 
-        [EmailAddress, MaxLength(100)]
-        public string? Email { get; set; }
+        [Required, EmailAddress, MaxLength(200)]
+        public string Email { get; set; } = string.Empty;
     }
 }

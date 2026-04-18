@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace InventoryManagement.API.Models
+namespace InventoryManagement.API.Models.Entities
 {
     public class Notification
     {
@@ -8,7 +8,7 @@ namespace InventoryManagement.API.Models
         public int NotificationId { get; set; }
 
         [Required]
-        public string UserId { get; set; } = default!;  // ✅ string now
+        public string UserId { get; set; } = default!;
 
         [Required]
         [MaxLength(500)]
@@ -23,5 +23,8 @@ namespace InventoryManagement.API.Models
 
         [Required]
         public DateTime DateCreated { get; set; } = DateTime.UtcNow;
+
+        // Navigation property
+        public User? User { get; set; }
     }
 }

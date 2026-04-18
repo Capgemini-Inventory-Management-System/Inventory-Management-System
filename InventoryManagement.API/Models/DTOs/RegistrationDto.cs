@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace InventoryManagement.API.Models
+namespace InventoryManagement.API.Models.DTOs
 {
-    public class RegistrationModel
+    public class RegistrationDto
     {
         [Required]
         [EmailAddress]
@@ -17,13 +17,13 @@ namespace InventoryManagement.API.Models
         public string ConfirmPassword { get; set; } = default!;
 
         [Required]
-        public string Username { get; set; } = default!;
+        public string UserName { get; set; } = default!;
 
         [Required]
         [Phone]
         public string MobileNumber { get; set; } = default!;
 
         [Required]
-        public string Role { get; set; } = default!;   // ✅ rename (not UserRole)
+        public string Role { get; set; } = default!;
     }
 }

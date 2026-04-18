@@ -4,10 +4,10 @@ namespace InventoryManagement.API.Models.DTOs
 {
     public class CreateProductDto
     {
-        [Required, MaxLength(100)]
+        [Required, MaxLength(200)]
         public string Name { get; set; } = string.Empty;
 
-        [MaxLength(500)]
+        [MaxLength(1000)]
         public string? Description { get; set; }
 
         [Required, Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than 0")]

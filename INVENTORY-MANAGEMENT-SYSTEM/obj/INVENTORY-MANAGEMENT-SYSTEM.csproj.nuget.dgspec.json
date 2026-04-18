@@ -1,54 +1,29 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\samiy\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
+    "/workspaces/Inventory-Management-System/INVENTORY-MANAGEMENT-SYSTEM/INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samiy\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {
+    "/workspaces/Inventory-Management-System/INVENTORY-MANAGEMENT-SYSTEM/INVENTORY-MANAGEMENT-SYSTEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samiy\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
+        "projectUniqueName": "/workspaces/Inventory-Management-System/INVENTORY-MANAGEMENT-SYSTEM/INVENTORY-MANAGEMENT-SYSTEM.csproj",
         "projectName": "INVENTORY-MANAGEMENT-SYSTEM",
-        "projectPath": "C:\\Users\\samiy\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\samiy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samiy\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\",
-=======
-    "C:\\Users\\Ayush Agarwal\\Desktop\\DotNet\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Ayush Agarwal\\Desktop\\DotNet\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Ayush Agarwal\\Desktop\\DotNet\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
-        "projectName": "INVENTORY-MANAGEMENT-SYSTEM",
-        "projectPath": "C:\\Users\\Ayush Agarwal\\Desktop\\DotNet\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\INVENTORY-MANAGEMENT-SYSTEM.csproj",
-        "packagesPath": "C:\\Users\\Ayush Agarwal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ayush Agarwal\\Desktop\\DotNet\\Inventory-Management-System\\INVENTORY-MANAGEMENT-SYSTEM\\obj\\",
->>>>>>> origin/team-b
+        "projectPath": "/workspaces/Inventory-Management-System/INVENTORY-MANAGEMENT-SYSTEM/INVENTORY-MANAGEMENT-SYSTEM.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/Inventory-Management-System/INVENTORY-MANAGEMENT-SYSTEM/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\samiy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Ayush Agarwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/team-b
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
-            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -67,22 +42,9 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
-<<<<<<< HEAD
             "Microsoft.EntityFrameworkCore.Design": {
-=======
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.24, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.24, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
->>>>>>> origin/team-b
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
@@ -100,6 +62,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.25, 8.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -108,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

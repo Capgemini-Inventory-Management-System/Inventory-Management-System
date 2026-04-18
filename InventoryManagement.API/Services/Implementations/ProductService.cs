@@ -4,7 +4,7 @@ using InventoryManagement.API.Models.DTOs;
 using InventoryManagement.API.Models.Entities;
 using InventoryManagement.API.Services.Interfaces;
 
-namespace InventoryManagement.API.Services
+namespace InventoryManagement.API.Services.Implementations
 {
     public class ProductService : IProductService
     {

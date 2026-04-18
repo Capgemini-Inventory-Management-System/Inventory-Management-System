@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace InventoryManagement.API.Models
+namespace InventoryManagement.API.Models.DTOs
 {
-    public class LoginModel
+    public class LoginDto
     {
         [Required]
         [EmailAddress]

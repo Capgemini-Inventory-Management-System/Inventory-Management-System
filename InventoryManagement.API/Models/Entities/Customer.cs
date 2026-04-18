@@ -1,22 +1,27 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventaryManagement.Models
+namespace InventoryManagement.API.Models.Entities
 {
     public class Customer
     {
         [Key]
-        [Required(ErrorMessage = "CustomerId is required"), MaxLength(100)]
-        public string CustomerId { get; set; } = string.Empty;
-        [Required(ErrorMessage = "Name is required"), MaxLength(20)]
-        public string CustomerName { get; set; } = string.Empty;
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int CustomerId { get; set; }
 
-        [Required(ErrorMessage = "Email is required")]
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
-        public string? Email { get; set; }
+        [Required]
+        [MaxLength(150)]
+        public string CustomerName { get; set; } = default!;
 
-        [Required(ErrorMessage = "PhoneNumber is required")]
-        [Phone(ErrorMessage = "Invalid Phone Number")]
-        public string MobileNumber { get; set; }
+        [Required]
+        [Phone]
+        [MaxLength(20)]
+        public string MobileNumber { get; set; } = default!;
+
+        [Required]
+        [EmailAddress]
+        [MaxLength(200)]
+        public string Email { get; set; } = default!;
 
         public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
     }

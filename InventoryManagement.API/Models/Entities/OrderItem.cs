@@ -1,19 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventoryManagement.API.Models
+namespace InventoryManagement.API.Models.Entities
 {
     public class OrderItem
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int OrderItemID { get; set; }
+        public int OrderItemId { get; set; }
 
         [Required]
-        public int OrderID { get; set; }
+        public int OrderId { get; set; }
 
         [Required]
-        public int ProductID { get; set; }
+        public int ProductId { get; set; }
 
         [Required]
         public int Quantity { get; set; }

@@ -1,4 +1,5 @@
-﻿using InventoryManagement.API.Services;
+﻿using InventoryManagement.API.Models.DTOs;
+using InventoryManagement.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,22 +11,22 @@ using Microsoft.AspNetCore.Mvc;
  * {
   "email": "admin@gmail.com",
   "password": "123",
+  "confirmPassword": "123",
   "username": "admin",
   "mobileNumber": "9999999999",
-  "userRole": "Admin"
+  "role": "Admin"
 }
 
 {
   "email": "manager@gmail.com",
   "password": "123",
+  "confirmPassword": "123",
   "username": "manager",
   "mobileNumber": "8888888888",
-  "userRole": "InventoryManager"
+  "role": "InventoryManager"
 }
 
 */
-
-
 
 public class AuthenticationController : ControllerBase
 {
@@ -37,9 +38,10 @@ public class AuthenticationController : ControllerBase
     }
 
     [HttpPost("register")]
-    public IActionResult Register(User user)
+    [AllowAnonymous]
+    public IActionResult Register(RegistrationDto model)
     {
-        var result = _auth.Register(user);
+        var result = _auth.Register(model);
 
         if (result.Contains("exists"))
             return BadRequest(new { message = result });
@@ -48,7 +50,8 @@ public class AuthenticationController : ControllerBase
     }
 
     [HttpPost("login")]
-    public IActionResult Login(LoginModel model)
+    [AllowAnonymous]
+    public IActionResult Login(LoginDto model)
     {
         var token = _auth.Login(model);
 

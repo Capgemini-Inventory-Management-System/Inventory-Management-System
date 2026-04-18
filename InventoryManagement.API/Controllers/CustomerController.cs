@@ -1,9 +1,9 @@
-﻿using InventaryManagement.Models.DTOs;
+﻿using InventoryManagement.API.Models.DTOs;
 using InventoryManagement.API.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace INVENTORY_MANAGEMENT_SYSTEM.Controllers
+namespace InventoryManagement.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -27,7 +27,7 @@ namespace INVENTORY_MANAGEMENT_SYSTEM.Controllers
 
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin,InventoryManager")]
-        public async Task<IActionResult> GetById(string id)
+        public async Task<IActionResult> GetById(int id)
         {
             var customer = await _customerService.GetCustomerByIdAsync(id);
             if (customer == null)
@@ -49,7 +49,7 @@ namespace INVENTORY_MANAGEMENT_SYSTEM.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Update(string id, [FromBody] UpdateCustomer updateDto)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateCustomer updateDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -63,7 +63,7 @@ namespace INVENTORY_MANAGEMENT_SYSTEM.Controllers
 
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
