@@ -57,7 +57,7 @@ namespace InventoryManagement.API.Services.Implementations
             };
 
             var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+                Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_KEY") ?? "DefaultKey123"));
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
